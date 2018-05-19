@@ -1,9 +1,14 @@
-/* Background pattern from Toptal Subtle Patterns */
+
+/* Quote Font */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+/* Background image for all pages */
 body {
     background-image: url('../images/website_background.jpg'); 
     font-family: 'Roboto', serif;
 }
 
+/* Page header for Viewport */
 .header {
     background-color: #ffffff;
     position: fixed;
@@ -13,30 +18,33 @@ body {
     right: 0px;
     left: 0px;
     margin-bottom: 100px;
-    border-bottom: solid #cccccc 3px;
+    border-bottom: solid #6c6c92 2px;
 }
 
+/* Container for Name and Navigation Menu */
 .container {
     width: 960px;
     margin: auto;
-    
 }
+
+/* Container for Header1 */
 .name {
     display: inline-block;
     background:#6c6c92;
     position: fixed;
+    box-shadow: -8px 2px 8px #6c6c92;
 }    
 
+/* Navigation Menu */
 .nav {
-    display: inline-block;
+    float: right;
     list-style-type: none;
     margin: 0;
     padding: 0;
     position: relative;
-    float: right;
-    
 }
 
+/* Navigation Menu List Items */
 .nav li {
     display: inline-block;
     padding-top: 30px;
@@ -45,52 +53,228 @@ body {
     text-decoration: none;
     font-size: 21px;
     color: #c6c6c6;
+    letter-spacing: 2px;
 }
 
+/* Header 1 */
 h1 {
     color: white;
     padding: 13.5px;
     font-size: 50px;
+    letter-spacing: 3px;
 }
 
+/* Box for Main Content */
 .box {
     border: 2px solid #ccc;
     width: 960px;    
     margin-top: 65px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 20px;
     background-color: #ffffff;
-
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
 }
 
+/* Header 2 */
 h2 {
     color: #6c6c92;
     padding: 20px;
     font-size: 30px;
     font-weight: bold;
+    letter-spacing: 3px;
 }
 
+/* Horizontal line in Box*/
 hr {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
     border-top: 2px solid #6c6c92;
 }
-
+/* About Me Image */
 img.me {
     float: left;
     padding-right: 20px;
     padding-left: 20px;
-
 }
 
+/* Contact Form */
+form {
+    margin-left: 20px;
+    color: #6c6c92;
+    line-height: 15px;
+}
+
+/*Form Input Field Labels */
+label {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Form Text Input Name */
+#name {
+    width: 90%;
+    padding: 7px;
+}
+
+/* Form Text Input Email */
+#email {
+    width: 90%;
+    padding: 7px;
+}
+
+/* Form Text Input Message */
+#message {
+    width: 90%;
+    padding: 11px;
+}
+
+/* Submit button */
+#submit {
+    background-color: #6c6c92;
+    color: white;
+    padding: 10px 36px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+/* Paragraph Formating */
 p {
-    line-height: 175%;
+    line-height: 160%;
     padding-left: 20px;
-    padding-right: 20px;
-    
+    padding-right: 20px;    
 }
 
+/* Quote Formatting */
+#quote {
+    text-align: right;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    padding-right: 20px;
+    letter-spacing: 2px;
+    color: #6c6c92;
+    font-weight: bold;
+}
+
+/* Image Container Row a */
+.imagesa {
+    margin: 20px;
+    letter-spacing: 30px;
+    position: relative;
+}
+
+/* Text Container overlay for Row a Images 1 */
+#aone {
+    z-index: 100;
+    position: absolute;
+    bottom: 2px;
+    height:25px;
+    width: 150px;
+    background-color: #6c6c92;
+    color: #c6c6c6;
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding-top: 9px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Text Container overlay for Row a Images 2 */
+#atwo {
+    z-index: 100;
+    position: absolute;
+    bottom: 2px;
+    left: 183px;
+    height:25px;
+    width: 150px;
+    background-color: #6c6c92;
+    color: #c6c6c6;
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding-top: 9px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Image Container Row b */
+.imagesb {
+    margin: 20px;
+    letter-spacing: 30px;
+    position: relative;
+}
+
+/* Text Container overlay for Row b Images 1 */
+#bone {
+    z-index: 100;
+    position: absolute;
+    bottom: 2px;
+    height:25px;
+    width: 150px;
+    background-color: #6c6c92;
+    color: #c6c6c6;
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding-top: 9px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Text Container overlay for Row b Images 2 */
+#btwo {
+    z-index: 100;
+    position: absolute;
+    bottom: 2px;
+    left: 183px;
+    height:25px;
+    width: 150px;
+    background-color: #6c6c92;
+    color: #c6c6c6;
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding-top: 9px;
+    text-align: center;
+    font-weight: bold;
+}
+/* Image Container Row c */
+.imagesc {
+    margin: 20px;
+    letter-spacing: 30px;
+    position: relative;
+}
+
+/* Text Container overlay for Row c Images 1 */
+#cone {
+    z-index: 100;
+    position: absolute;
+    bottom: 2px;
+    height:25px;
+    width: 150px;
+    background-color: #6c6c92;
+    color: #c6c6c6;
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding-top: 9px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Univisted Link */
+a:link {
+    color: #c6c6c6;
+    text-decoration: none;
+}
+
+/* Hover Link */
+a:hover {
+    background-color:#c6c6c6;;
+    color: #6c6c92;
+}
+
+/* Page Footer for Viewport */
 div.footer {
     background-color: #c6c6c6;
     position: fixed;
@@ -98,21 +282,10 @@ div.footer {
     bottom: 0px;
     right: 0px;
     left: 0px;
-    border-top: 4px solid #6c6c92;
-    height: 17px;
-    padding-top:25px;
+    border-top: 2px solid #6c6c92;
+    height: 10px;
+    padding-top:20px;
+    padding-bottom: 8px;
     text-align: center;
     color: #6c6c92;
 }
-
-/* unvisited link */
-a:link {
-    color: #c6c6c6;
-    text-decoration: none;
-}
-
-/* visited link */
-a:visited {
-    color:#6c6c92;
-}
-
